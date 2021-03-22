@@ -1,0 +1,2 @@
+ffffffff81c00280 R sys_call_table
+ffffffff81c01660 R ia32_sys_call_table

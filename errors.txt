@@ -1,0 +1,223 @@
+make -C /lib/modules/4.19.0-13-amd64/build M=/root modules
+make[1]: Entering directory '/usr/src/linux-headers-4.19.0-13-amd64'
+  CC [M]  /root/fork_hook.o
+/root/fork_hook.c: In function ‘hooking_syscall’:
+/root/fork_hook.c:8:3: error: ‘orig_cr0’ undeclared (first use in this function); did you mean ‘orig_ist’?
+   orig_cr0 = read_cr0();\
+   ^~~~~~~~
+/root/fork_hook.c:21:2: note: in expansion of macro ‘unprotect_memory’
+  unprotect_memory();
+  ^~~~~~~~~~~~~~~~
+/root/fork_hook.c:8:3: note: each undeclared identifier is reported only once for each function it appears in
+   orig_cr0 = read_cr0();\
+   ^~~~~~~~
+/root/fork_hook.c:21:2: note: in expansion of macro ‘unprotect_memory’
+  unprotect_memory();
+  ^~~~~~~~~~~~~~~~
+/root/fork_hook.c:8:24: error: expected ‘)’ before ‘;’ token
+   orig_cr0 = read_cr0();\
+                        ^~
+   write_cr0(orig_cr0 & (~ 0x10000));\
+                         
+/root/fork_hook.c:8:24: note: in definition of macro ‘unprotect_memory’
+   orig_cr0 = read_cr0();\
+                        ^~
+   write_cr0(orig_cr0 & (~ 0x10000));\
+                         
+/root/fork_hook.c:7:27: note: to match this ‘(’
+ #define unprotect_memory()(\
+                           ^~
+   orig_cr0 = read_cr0();\
+                            
+/root/fork_hook.c:7:27: note: in definition of macro ‘unprotect_memory’
+ #define unprotect_memory()(\
+                           ^~
+   orig_cr0 = read_cr0();\
+                            
+/root/fork_hook.c:13:22: error: expected ‘)’ before ‘;’ token
+   write_cr0(orig_cr0);\
+                      ^~
+   );
+                       
+/root/fork_hook.c:13:22: note: in definition of macro ‘protect_memory’
+   write_cr0(orig_cr0);\
+                      ^~
+   );
+                       
+/root/fork_hook.c:12:25: note: to match this ‘(’
+ #define protect_memory()(\
+                         ^~
+   write_cr0(orig_cr0);\
+                          
+/root/fork_hook.c:12:25: note: in definition of macro ‘protect_memory’
+ #define protect_memory()(\
+                         ^~
+   write_cr0(orig_cr0);\
+                          
+/root/fork_hook.c: In function ‘unhooking_suscall’:
+/root/fork_hook.c:8:3: error: ‘orig_cr0’ undeclared (first use in this function); did you mean ‘orig_ist’?
+   orig_cr0 = read_cr0();\
+   ^~~~~~~~
+/root/fork_hook.c:29:2: note: in expansion of macro ‘unprotect_memory’
+  unprotect_memory();
+  ^~~~~~~~~~~~~~~~
+/root/fork_hook.c:8:24: error: expected ‘)’ before ‘;’ token
+   orig_cr0 = read_cr0();\
+                        ^~
+   write_cr0(orig_cr0 & (~ 0x10000));\
+                         
+/root/fork_hook.c:8:24: note: in definition of macro ‘unprotect_memory’
+   orig_cr0 = read_cr0();\
+                        ^~
+   write_cr0(orig_cr0 & (~ 0x10000));\
+                         
+/root/fork_hook.c:7:27: note: to match this ‘(’
+ #define unprotect_memory()(\
+                           ^~
+   orig_cr0 = read_cr0();\
+                            
+/root/fork_hook.c:7:27: note: in definition of macro ‘unprotect_memory’
+ #define unprotect_memory()(\
+                           ^~
+   orig_cr0 = read_cr0();\
+                            
+/root/fork_hook.c:13:22: error: expected ‘)’ before ‘;’ token
+   write_cr0(orig_cr0);\
+                      ^~
+   );
+                       
+/root/fork_hook.c:13:22: note: in definition of macro ‘protect_memory’
+   write_cr0(orig_cr0);\
+                      ^~
+   );
+                       
+/root/fork_hook.c:12:25: note: to match this ‘(’
+ #define protect_memory()(\
+                         ^~
+   write_cr0(orig_cr0);\
+                          
+/root/fork_hook.c:12:25: note: in definition of macro ‘protect_memory’
+ #define protect_memory()(\
+                         ^~
+   write_cr0(orig_cr0);\
+                          
+/root/fork_hook.c:33:12: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+ asmlinkage int hooked_shutdown(int magic1, int magic2)
+            ^~~
+/root/fork_hook.c:39:1: error: duplicate ‘static’
+ static int __init module_init(void)
+ ^~~~~~
+In file included from /root/fork_hook.c:1:
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:16: warning: variable ‘initcall_t’ declared ‘inline’
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                ^~~~~~~~~~
+/root/fork_hook.c:39:19: note: in expansion of macro ‘module_init’
+ static int __init module_init(void)
+                   ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:16: error: ‘no_instrument_function’ attribute applies only to functions
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                ^~~~~~~~~~
+/root/fork_hook.c:39:19: note: in expansion of macro ‘module_init’
+ static int __init module_init(void)
+                   ^~~~~~~~~~~
+/root/fork_hook.c:39:1: warning: ‘cold’ attribute ignored [-Wattributes]
+ static int __init module_init(void)
+ ^~~~~~
+In file included from /root/fork_hook.c:1:
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:42: error: expected ‘,’ or ‘;’ before ‘__inittest’
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                                          ^~~~~~~~~~
+/root/fork_hook.c:39:19: note: in expansion of macro ‘module_init’
+ static int __init module_init(void)
+                   ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:42: warning: ‘alias’ attribute ignored [-Wattributes]
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                                          ^~~~~~~~~~
+/root/fork_hook.c:39:19: note: in expansion of macro ‘module_init’
+ static int __init module_init(void)
+                   ^~~~~~~~~~~
+/root/fork_hook.c:41:30: warning: initialization of ‘long unsigned int *’ from ‘long unsigned int’ makes pointer from integer without a cast [-Wint-conversion]
+  unsigned long *call_table = kallsyms_lookup_name("sys_call_table");
+                              ^~~~~~~~~~~~~~~~~~~~
+/root/fork_hook.c:45:9: warning: ‘return’ with a value, in function returning void
+  return 0;
+         ^
+/root/fork_hook.c:27:6: note: declared here
+ void unhooking_suscall(void *orig_addr, uint16_t syscall_offset)
+      ^~~~~~~~~~~~~~~~~
+/root/fork_hook.c:48:20: error: invalid storage class for function ‘module_cleanup’
+ static void __exit module_cleanup(void)
+                    ^~~~~~~~~~~~~~
+/root/fork_hook.c: In function ‘module_cleanup’:
+/root/fork_hook.c:50:2: error: implicit declaration of function ‘unhooking_syscall’; did you mean ‘unhooking_suscall’? [-Werror=implicit-function-declaration]
+  unhooking_syscall(orig_shutdown, __NR_shutdown, call_table);
+  ^~~~~~~~~~~~~~~~~
+  unhooking_suscall
+/root/fork_hook.c: In function ‘unhooking_suscall’:
+/root/fork_hook.c:48:1: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+ static void __exit module_cleanup(void)
+ ^~~~~~
+In file included from /root/fork_hook.c:1:
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:16: error: type defaults to ‘int’ in declaration of ‘initcall_t’ [-Werror=implicit-int]
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                ^~~~~~~~~~
+/root/fork_hook.c:53:1: note: in expansion of macro ‘module_init’
+ module_init(module_init);
+ ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:16: warning: variable ‘initcall_t’ declared ‘inline’
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                ^~~~~~~~~~
+/root/fork_hook.c:53:1: note: in expansion of macro ‘module_init’
+ module_init(module_init);
+ ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:16: error: ‘no_instrument_function’ attribute applies only to functions
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                ^~~~~~~~~~
+/root/fork_hook.c:53:1: note: in expansion of macro ‘module_init’
+ module_init(module_init);
+ ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:16: error: redeclaration of ‘initcall_t’ with no linkage
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                ^~~~~~~~~~
+/root/fork_hook.c:53:1: note: in expansion of macro ‘module_init’
+ module_init(module_init);
+ ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:16: note: previous declaration of ‘initcall_t’ was here
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                ^~~~~~~~~~
+/root/fork_hook.c:39:19: note: in expansion of macro ‘module_init’
+ static int __init module_init(void)
+                   ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:42: error: expected ‘,’ or ‘;’ before ‘__inittest’
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                                          ^~~~~~~~~~
+/root/fork_hook.c:53:1: note: in expansion of macro ‘module_init’
+ module_init(module_init);
+ ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:131:42: warning: ‘alias’ attribute ignored [-Wattributes]
+  static inline initcall_t __maybe_unused __inittest(void)  \
+                                          ^~~~~~~~~~
+/root/fork_hook.c:53:1: note: in expansion of macro ‘module_init’
+ module_init(module_init);
+ ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:137:42: error: invalid storage class for function ‘__exittest’
+  static inline exitcall_t __maybe_unused __exittest(void)  \
+                                          ^~~~~~~~~~
+/root/fork_hook.c:54:1: note: in expansion of macro ‘module_exit’
+ module_exit(module_cleanup);
+ ^~~~~~~~~~~
+/usr/src/linux-headers-4.19.0-13-common/include/linux/module.h:137:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  static inline exitcall_t __maybe_unused __exittest(void)  \
+  ^~~~~~
+/root/fork_hook.c:54:1: note: in expansion of macro ‘module_exit’
+ module_exit(module_cleanup);
+ ^~~~~~~~~~~
+/root/fork_hook.c:54:1: warning: ‘alias’ attribute ignored [-Wattributes]
+/root/fork_hook.c:54:1: error: expected declaration or statement at end of input
+cc1: some warnings being treated as errors
+make[4]: *** [/usr/src/linux-headers-4.19.0-13-common/scripts/Makefile.build:315: /root/fork_hook.o] Error 1
+make[3]: *** [/usr/src/linux-headers-4.19.0-13-common/Makefile:1565: _module_/root] Error 2
+make[2]: *** [Makefile:146: sub-make] Error 2
+make[1]: *** [Makefile:8: all] Error 2
+make[1]: Leaving directory '/usr/src/linux-headers-4.19.0-13-amd64'
+make: *** [Makefile:3: all] Error 2
