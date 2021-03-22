@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq
+|2,0,1616443908,,"wq"
 :q
 |2,0,1616442304,,"q"
-:wq
-|2,0,1616442271,,"wq"
 :q!
 |2,0,1616438310,,"q!"
 :qq
@@ -40,34 +40,44 @@
 |3,1,36,0,1,0,1616438463,"i"
 
 # File marks:
-'0  32  0  /etc/ssh/sshd_config
-|4,48,32,0,1616442304,"/etc/ssh/sshd_config"
+'0  1  6  ~/transfer_back_test.txt
+|4,48,1,6,1616443908,"~/transfer_back_test.txt"
 '1  32  0  /etc/ssh/sshd_config
-|4,49,32,0,1616442271,"/etc/ssh/sshd_config"
-'2  32  19  /etc/ssh/sshd_config
-|4,50,32,19,1616442141,"/etc/ssh/sshd_config"
+|4,49,32,0,1616442304,"/etc/ssh/sshd_config"
+'2  32  0  /etc/ssh/sshd_config
+|4,50,32,0,1616442271,"/etc/ssh/sshd_config"
 '3  32  19  /etc/ssh/sshd_config
 |4,51,32,19,1616442141,"/etc/ssh/sshd_config"
 '4  32  19  /etc/ssh/sshd_config
-|4,52,32,19,1616442099,"/etc/ssh/sshd_config"
+|4,52,32,19,1616442141,"/etc/ssh/sshd_config"
 '5  32  19  /etc/ssh/sshd_config
 |4,53,32,19,1616442099,"/etc/ssh/sshd_config"
 '6  32  19  /etc/ssh/sshd_config
 |4,54,32,19,1616442099,"/etc/ssh/sshd_config"
 '7  32  19  /etc/ssh/sshd_config
 |4,55,32,19,1616442099,"/etc/ssh/sshd_config"
-'8  1  0  ~/fork_hook.c
-|4,56,1,0,1616439222,"~/fork_hook.c"
-'9  1  0  ~/errors.txt
-|4,57,1,0,1616438581,"~/errors.txt"
+'8  32  19  /etc/ssh/sshd_config
+|4,56,32,19,1616442099,"/etc/ssh/sshd_config"
+'9  1  0  ~/fork_hook.c
+|4,57,1,0,1616439222,"~/fork_hook.c"
 
 # Jumplist (newest first):
+-'  1  6  ~/transfer_back_test.txt
+|4,39,1,6,1616443908,"~/transfer_back_test.txt"
+-'  32  0  /etc/ssh/sshd_config
+|4,39,32,0,1616442304,"/etc/ssh/sshd_config"
 -'  32  0  /etc/ssh/sshd_config
 |4,39,32,0,1616442304,"/etc/ssh/sshd_config"
 -'  32  0  /etc/ssh/sshd_config
 |4,39,32,0,1616442271,"/etc/ssh/sshd_config"
+-'  32  0  /etc/ssh/sshd_config
+|4,39,32,0,1616442271,"/etc/ssh/sshd_config"
 -'  32  19  /etc/ssh/sshd_config
 |4,39,32,19,1616442141,"/etc/ssh/sshd_config"
+-'  32  19  /etc/ssh/sshd_config
+|4,39,32,19,1616442141,"/etc/ssh/sshd_config"
+-'  32  19  /etc/ssh/sshd_config
+|4,39,32,19,1616442099,"/etc/ssh/sshd_config"
 -'  32  19  /etc/ssh/sshd_config
 |4,39,32,19,1616442099,"/etc/ssh/sshd_config"
 -'  1  0  /etc/ssh/sshd_config
@@ -78,6 +88,14 @@
 |4,39,1,0,1616442083,"/etc/ssh/sshd_config"
 -'  1  0  /etc/ssh/sshd_config
 |4,39,1,0,1616442083,"/etc/ssh/sshd_config"
+-'  1  0  /etc/ssh/sshd_config
+|4,39,1,0,1616442083,"/etc/ssh/sshd_config"
+-'  1  0  /etc/ssh/sshd_config
+|4,39,1,0,1616442083,"/etc/ssh/sshd_config"
+-'  1  0  /etc/ssh/sshd_config
+|4,39,1,0,1616442083,"/etc/ssh/sshd_config"
+-'  1  0  /etc/ssh/sshd_config
+|4,39,1,0,1616442083,"/etc/ssh/sshd_config"
 -'  1  0  ~/fork_hook.c
 |4,39,1,0,1616439222,"~/fork_hook.c"
 -'  1  0  ~/fork_hook.c
@@ -110,6 +128,70 @@
 |4,39,1,0,1616439222,"~/fork_hook.c"
 -'  1  0  ~/fork_hook.c
 |4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  1  0  ~/fork_hook.c
+|4,39,1,0,1616439222,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
+-'  53  0  ~/fork_hook.c
+|4,39,53,0,1616438597,"~/fork_hook.c"
 -'  53  0  ~/fork_hook.c
 |4,39,53,0,1616438597,"~/fork_hook.c"
 -'  53  0  ~/fork_hook.c
@@ -180,90 +262,15 @@
 |4,39,1,0,1616438581,"~/errors.txt"
 -'  1  0  ~/errors.txt
 |4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  1  0  ~/errors.txt
-|4,39,1,0,1616438581,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
--'  173  0  ~/errors.txt
-|4,39,173,0,1616438561,"~/errors.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/transfer_back_test.txt
+	*	1616443907	0
+	"	1	6
+	^	1	7
+	.	1	6
+	+	1	6
 
 > /etc/ssh/sshd_config
 	*	1616442301	0
