@@ -1,165 +1,3 @@
-dmesg
-clear
-vi fork_hook.c
-make
-clear
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-vi fork_hook.c
-make
-insmod sys_call_kernel.ko 
-rmmod fork_hook.ko 
-dmesg
-clear
-insmod fork_hook.ko 
-clear
-make clean
-ls
-vi fork_hook.c 
-clear
-ls
-make
-ls
-insmod fork_hook.ko 
-rmmod  fork_hook.ko 
-clear
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-dmesg
-clear
-vi fork_hook.c
-vi fork_hook.c
-make
-clear
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-vi fork_hook.c
-make
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-vi fork_hook.c
-make
-clear
-vi fork_hook.c
-clear
-make
-clear
-make
-vi fork_hook.c
-make
-vi fork_hook.c
-make
-clear
-makee
-make
-clear
-make
-vi fork_hook.c
-make
-make > errors.txt
-vi errors.txt 
-make &> errors.txt
-vi errors.txt 
-vi fork_hook.c
-make &> errors.txt
-vi errors.txt 
-vi fork_hook.c
-make &> errors.txt
-vi errors.txt 
-vi fork_hook.c
-make
-vi fork_hook.c
-clear
-make
-vi fork_hook.c
-clear
-make
-vi fork_hook.c
-clear
-make
-make &> errors.txt 
-vi errors.txt 
-clear
-vi fork_hook.c
-clear
-make &> errors.txt 
-vi errors.txt 
-clear
-make
-make &> errors.txt 
-vi errors.txt 
-clear
-vi fork_hook.c
-clear
-make &> errors.txt 
-vi errors.txt 
-clear
-vi fork_hook.c
-clear
-vi fork_hook.c
-make
-vi fork_hook.c
-clear
-vi fork_hook.c
-make
-make > errors.txt 
-clear
-make > errors.txt 
-vi errors.txt 
-clear
-make &> errors.txt 
-vi errors.txt 
-clear
-vi fork_hook.c
-clear
-make &> errors.txt 
-vi errors.txt 
-vi fork_hook.c
-make &> errors.txt 
-vi errors.txt 
-clear
-ls
-make clean
-ls
-clear
-vi fork_hook.c 
-clear
-hostname --fqdnn
-clear
-hostname --fqdn
-id -un
-cd ..
-id -un
-ls
-cd root
-clear
-id -un
-hostname --fqdn
-hostname
-ip
-ip addr show
-clar
-clear
-ls
-ipconfig -a
-hostname -I
-ls
-cd ..
-ls
-cd lost+found/
-ls
-cd ..
-cat table_address3.txt 
-cat table_address_test.txt.txt 
-cat table_address_test.txt
-clear
-ls
-cd root/
-pwd
-hostname
 hostname-I
 hostname -I
 hostnam -fqdn
@@ -498,3 +336,165 @@ clear
 make
 insmod fork_hook.ko 
 sudo shutdown
+clear
+ls
+vi test.c
+gcc test.c 
+clear
+ls
+make clean
+vi toorkit.c 
+clear
+ls
+./a.out 
+dmesg
+clear
+ls
+vi foo.txt 
+clear
+ls
+rm foo.txt 
+clear
+make
+insmod toorkit.ko 
+./a.out 
+dmesg
+clear
+ls
+rmmod toorkit.ko 
+clear
+ls
+clear
+ls
+make clean
+clear
+l
+ls
+clear
+ls
+rm foo.txt 
+rm a.out 
+clear
+ls
+vi toorkit.c 
+clear
+ls
+make
+insmod toorkit.ko 
+rmmod toorkit.ko 
+make clean
+vi toorkit.c 
+clear
+make
+insmod toorkit.ko 
+rmmod toorkit.ko 
+clear
+make clean
+clear
+vi toorkit.c 
+clear
+vi toorkit.c 
+clear
+make
+insmod toorkit.ko 
+clear
+vi toorkit.c
+clear
+make
+insmod toorkit.ko 
+dmesg
+clear
+ls
+rmmod toorkit.ko 
+clear
+ls
+gcc test.c 
+./a.out 
+ls
+dmesg
+dmesg -c
+clear
+rm foo.txt 
+clear
+rm a.out 
+clear
+ls
+make clean
+clear
+ls
+vi toorkit.c 
+clear
+ls
+make
+insmod toorkit.ko 
+clear
+vi toorkit.ko 
+clear
+make clean
+vi toorkit.c 
+clear
+make
+insmod toorkit.ko 
+dmesg
+rmmod toorkit.ko 
+clear
+sudo reboot
+clear
+ls
+make clean
+clear
+make
+insmod toorkit.ko 
+rmmod toorkit.ko 
+vi toorkit.c
+make
+clear
+dmesg
+dmesg -c
+clear
+ls
+make clean
+make
+insmod toorkit.ko 
+rmmod toorkit.ko 
+vi toorkit.c
+make clean
+clear
+vi toorkit.c 
+cat Makefile
+clear
+vi toorkit.c 
+clear
+ls
+make
+clear
+vi toorkit.c 
+clear
+make
+insmod toorkit.ko 
+rmmod toorkit.ko 
+clear
+ls
+make clean
+clear
+clear
+ls
+vi toorkit.c 
+clear
+make
+insmod toorkit.ko 
+clear
+rmmod toorkit.ko 
+clear
+vi toorkit.c
+clear
+make
+insmod toorkit.ko 
+dmesg
+clear
+dmesg -c
+clear
+ls
+dmesg
+rmmod toorkit.ko 
+sudo reboot
