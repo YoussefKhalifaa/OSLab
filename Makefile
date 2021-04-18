@@ -1,29 +1,28 @@
-ifeq ($(KERNELRELEASE),)
+BINARY     := mychardev
+KERNEL      := /lib/modules/$(shell uname -r)/build
+ARCH        := x86
+C_FLAGS     := -Wall
+KMOD_DIR    := $(shell pwd)
+TARGET_PATH := /lib/modules/$(shell uname -r)/kernel/drivers/char
 
-# Assume the source tree is where the running kernel was built
-# You should set KERNELDIR in the environment if it's elsewhere
-KERNELDIR ?= /lib/modules/$(shell uname -r)/build
+OBJECTS := main.o
 
-# The current directory is passed to sub-makes as argument
-PWD := $(shell pwd)
+ccflags-y += $(C_FLAGS)
 
-modules:
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+obj-m += $(BINARY).o
 
-modules_install:
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules_install
+$(BINARY)-y := $(OBJECTS)
+
+$(BINARY).ko:
+	make -C $(KERNEL) M=$(KMOD_DIR) modules
+
+install:
+	cp $(BINARY).ko $(TARGET_PATH)
+	depmod -a
+
+uninstall:
+	rm $(TARGET_PATH)/$(BINARY).ko
+	depmod -a
+
 clean:
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean
-
-help:
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) help
-
-.PHONY: modules modules_install clean
-
-else
-
-# called from kernel build system: just declare our module
-obj-m := toorkit.o
-yolo-objs :=
-
-endif
+	make -C $(KERNEL) M=$(KMOD_DIR) clean
