@@ -1,500 +1,500 @@
-hostname-I
-hostname -I
-hostnam -fqdn
-hostname -fqdn
-clear
-hostname --fqdn
-hostname
-hostname -I
-ls
-cat table_address.sh 
-clear
-ls
-cd ..
-ls
-cd root/
-ls
-clear
-hostname
-
-hostname --fqdn
-ls
-cat test.txt 
-clear
-scp root@csce-3402:/root/test.txt /Users/macbookpro/desktop transfer_test.txt
-scp root@csce-3402:/root/test.txt /Users/macbookpro/desktop
-scp root@10.0.2.15:/root/test.txt /Users/macbookpro/desktop
-sudo service ssh status
-clear
-nano /etc/ssh/sshd_config
-vi /etc/ssh/sshd_config
-sudo reboot
-vi /etc/ssh/sshd_config
-clear
-vi /etc/ssh/sshd_config
+dmesg
+rmmod ex6.ko
 sudo reboot
 clear
-vi /etc/ssh/sshd_config
+ls
+cd ex6
+clear
+make
+insmod ex6.ko 
+clear
+vi ex6.c
+clear
+sudo reboot
 clear
 ls
+cd ex7
 clear
-git init
 ls
-git add .
-git status
-git commit -m "first commit"
-git remote add origin https://github.com/YoussefKhalifaa/OSLab.git
-git push -u origin master
+make clean
+clear
+vi ex7.c 
+clear
+vi ex7.c 
+clear
+make
+insmod ex7.ko 
+dmesg
+clear
+ls
+cd ex7
+ls
+make clea
+make clean
+clear
+ls
+vi ex7.c 
+clear
+make
+insmod ex7.ko 
+dmesg
+clear
+ls
+cd ex7
+clear
+ls
+make clean
+clear
+ls
+make
+insmod ex7.ko 
+ls
+clear
+ls
+cd ex7
+clear
+ls
+vi ex7.c
+clear
+make clean
+make
+clear
+ls
+insmod ex7.ko 
+dmesg
+clear
+ls
 git pull https://github.com/YoussefKhalifaa/OSLab.git
 ls
-cat transfer_test.txt 
-vi transfer_back_test.txt
+cat Makefile 
 clear
 ls
-git push -u origin master
-git remote add origin https://github.com/YoussefKhalifaa/OSLab.git
-git add .
-git commit -m "second commit"
-git remote add origin https://github.com/YoussefKhalifaa/OSLab.git
-git status
-git push
-clear
+cd ..
 ls
-git pull
+cd dev
 ls
-vi Makefile 
-make
-clear
-make
-clear
-ls
-make
-clear
-ls
-rm transfer_test.txt 
-rm transfer_back_test.txt 
-rm test.txt 
-clear
-ls
-rm errors.txt 
-rm address.txt 
-clear
-ls
-rm proc_module.c 
-rm hello_world_kernel.c 
-rm modules.order 
-rm sys_call_kernel.c 
-clear
-ls
-rm table_address.sh 
-ls
+cd ../root
 clear
 ls
 vi Makefile 
 clear
-make
-make &> errors.txt
-clear
-vi errors.txt 
+ls
+mkdir ex9
+ls
+cp ex9_test.c ex9
+cp Makefile ex9
 clear
 ls
-vi fork_hook.c 
-clear
-vi Makefile 
-make
-make &> errors.txt 
-vi errors.txt 
-clear
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make &> errors.txt 
-vo errors.txt 
-vi errors.txt 
-clear
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
+ls ex9
 clear
 ls
-make clean
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c vi fork_hook.
-clear
+cd ex9
 ls
-insmod fork_hook.ko 
-dmesg
-rmmod fork_hook.ko 
-vi fork_hook.c
-clear
-make
-vi fork_hook.c
-clear
-make
-vi fork_hook.c
-clear
-make
-clear
-ls
-make clean
-mak
-make
-clear
-ls
-insmod fork_hook.ko 
-clear
-dmesg
-rmmod fork_hook.ko 
-clear
-make clean
-vi fork_hook.c
-clear
-make
-insmod fork_hook.ko 
-sudo reboot
-clear
-ls
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-dmesg -c
-clear
-dmesg
-insmod fork_hook.ko > dmesg.txt
-ls
-cat dmesg.txt 
-rm dmesg.txt 
-clear
-dmesg
-rmmod fork_hook.ko 
-clear
-dmesg
-vi fork_hook.c
-clear
-make clean
-make
-ls
-make clean
-clear
-vi fork_hook.c
-make
-clear
-ls
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-dmesg
-clear
-vi fork_hook.c
-clear
-make clean
-make
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-dmesg
-clear
-ls
-vi fork_hook.c
-clear
-make clean
-make
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-ls
-dmesg
-clear
-vi fork_hook.c
-clear
-make
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
 clear
 cd ..
 ls
-cd boot/
+rm ex9_test.c 
+rm Makefile 
+clear
 ls
-cat System.map-4.19.0-13-amd64 | grep "sys_call_table"
+cd ex9
+ls
+make
+ls
+insmod mychardev.ko
+dmesg
+clear
+ls
+cd ../../dev
+ls
+cd ../root/ex9
+clear
+ls
+rmmod mychardev.ko
+ls
+ls ~/dev
+ls dev
+cd ../../dev
+ls
+clear
+ls
+cd ../root/ex9
+clear
+ls
+insmod mychardev.ko
+cd ../../dev
+ls
+cat mychardev-0
+cat mychardev-1
+clear
+ls
+dmesg
+clear
+echo "thisismycipherkey" > mychardev-0
+cat mychardev-0
+demsg
+dmesg
+clear
+cat mychardev-0 | head -1
+cat mychardev-0 | tail -1
+cat mychardev-0 | tail -5
+cat mychardev-0 | tail 
+cat mychardev-0 | head
+cat mychardev-0 | head
+clear
+echo "HELLO" > mychardev-0
+cat mychardev-0 | head
+dmesg | -tail 2
+dmesg | tail 2
+dmesg | tail -2
+clear
+cat mychardev-0 | head -2
+cat mychardev-0 | taill -2
+cat mychardev-0 | tail -2
+clear
+sudo shutdown
+shutdown -c
+clear
+ls
+cd ../root/ex9
+ls
+rmmod mychardev.ko
+clear
+dmesg
 clear
 cd ..
 ls
-cd root/
 clear
-make clean
-dmesg
-vi fork_hook.c 
-clear
-make
-vi fork_hook.c 
-clear
-make
-insmod fork_hook.ko 
-clear
-rmmod fork_hook.ko 
-clear
-vi fork_hook.c
-clear
-vi fork_hook.c
-make
-vi fork_hook.c
-make
-vi fork_hook.c
-make
-vi fork_hook.c
-make
-clear
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-vi fork_hook.c
-clear
-make clean
-make
-insmod fork_hook.ko 
-sudo reboot
-make clean
-dmesg
-ckear
-clear
-ls
-vi fork_hook.c
-make
-insmod fork_hook.ko 
-clear
-rmmod fork_hook.ko 
-vi fork_hook.c
-make
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
-vi fork_hook.c
-clear
-sudo shutdown
-clear
-vi fork_hook.c
-make
-clear
-vi fork_hook.c
-clear
-make
-insmod fork_hook.k
-insmod fork_hook.ko 
-clear
-vi fork_hook.c
-make
-clear
-make clean
-clear
-make
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-insmod fork_hook.ko 
-rmmod fork_hook.ko 
-clear
+sudo poweroff
 ls
 clear
-dmesg
-clear
-vi fork_hook.c
-cat fork_hook.c | grep "shutdown"
-clear
-cat fork_hook.c | grep "shutdown"
-clear
-make
-insmod fork_hook.ko 
-dmesg
-cat syslog
-dmesg
-clear
-rmmod fork_hook.ko 
-vi fork_hook.c
-cat fork_hook.c | grep "fork"
-clear
-make
-insmod fork_hook.ko 
-sudo shutdown
+cd ex9
 clear
 ls
-vi test.c
-gcc test.c 
+vi ex9_test.c 
 clear
 ls
+insmod mychardev.ko 
+cat /dev/cipher
+cat /dev/cipher_key 
+dmesg
+clear
+rmmod mychardev.ko
+clear
+ls
+vi ex9_test.c 
+clear
+make cleann
 make clean
-vi toorkit.c 
+make
 clear
 ls
-./a.out 
+insmod mychardev.ko 
+cat /dev/cipher
+dmesg
+cat /dev/cipher_key 
+dmesg
+clear
+rmmod mychardev.ko
+clear
+ls
+vi ex9_test.c 
+clear
+make
+make clea
+make clean
+make
+vi ex9_test.c 
+clear
+make
+insmod mychardev.ko
+cat /dev/cipher
 dmesg
 clear
 ls
-vi foo.txt 
+cat /dev/cipher_key 
+vi ex9_test.c 
 clear
-ls
-rm foo.txt 
-clear
+make clean
 make
-insmod toorkit.ko 
-./a.out 
+clear
+insmod mychardev.ko 
+rmmod mychardev.ko
+insmod mychardev.ko 
+cat /dev/cipher
+cat /dev/cipher_key 
+rmmod mychardev.ko
+clear
+vi ex9_test.c 
+clear
+make clean
+make
+clear
+insmod mychardev.ko 
+cat /dev/cipher_key 
+cat /dev/cipher
+rmmod mychardev.ko
 dmesg
 clear
-ls
-rmmod toorkit.ko 
+vi ex9_test.c 
 clear
-ls
-clear
-ls
 make clean
-clear
-l
-ls
-clear
-ls
-rm foo.txt 
-rm a.out 
-clear
-ls
-vi toorkit.c 
-clear
-ls
 make
-insmod toorkit.ko 
-rmmod toorkit.ko 
-make clean
-vi toorkit.c 
 clear
-make
-insmod toorkit.ko 
-rmmod toorkit.ko 
+insmod mychardev.ko 
+cat /dev/cipher_key 
+cat /dev/cipher
+echo "9" > /dev/cipher
+cat /dev/cipher
+echo "0" > /dev/cipher
+dmesg
+clear
+rmmod mychardev.ko
 clear
 make clean
 clear
-vi toorkit.c 
+vi ex9_test.c 
 clear
-vi toorkit.c 
+ls
+make
+vi ex9_test.c 
 clear
 make
-insmod toorkit.ko 
+insmod mychardev.ko 
+echo "hey" > /dev/cipher
+dmesg
+echo "heyo" > /dev/cipher
+dmesg
+rmmod mychardev.ko
 clear
-vi toorkit.c
+vi ex9_test.c 
+clear
+make clean
+make
+vi ex9_test.c 
 clear
 make
-insmod toorkit.ko 
-dmesg
+insmod mychardev.ko
 clear
 ls
-rmmod toorkit.ko 
+cat /dev/cipher
+echo "hello" /dev/cipher
+cat /dev/cipher
+dmesg
+rmmod mychardev.ko
+clear
+vi ex9_test.c 
+clear
+make
+make clean
+make
+insmod mychardev.ko 
+dmesg
+echo "yessir" > /dev/cipher
+dmesg
+rmmod mychardev.k
+rmmod mychardev.ko
+clear
+insmmod mychardev.ko 
+insmod mychardev.ko 
+rmmod mychardev.ko
+make clean
+clear
+vi ex9_test.c 
+clear
+make
+insmod mychardev.ko 
+echo "yes" > /dev/cipher
+cat /dev/cipher
+dmesg
+echo "top" > /dev/cipher
+cat /dev/cipher
+dmesg
+clear
+cat /dev/cipher
+rmmod mychardev.ko
+vi ex9_test.c 
+clear
+make clean
+make
+vi ex9_test.c 
+make
+insmod mychardev.ko 
+cat /dev/cipher
+echo "hello" /dev/cipher
+dmesg
+clear
+cat /dev/cipher
+echo "hello" /dev/cipher
+echo "hello" > /dev/cipher
+cat /dev/cipher
+dmesg
+rmmod mychardev.ko
 clear
 ls
-gcc test.c 
-./a.out 
+make clean
+clear
 ls
+vi ex9_test.c 
+clear
+make
+insmod mychardev.ko 
+clear
+cat /dev/cipher
+echo "hello" > /dev/cipher
+cat /dev/cipher
 dmesg
+clear
+cat /dev/cipher
+cat /dev/cipher_key 
+rmmod mychardev.ko
+make clean
+vi ex9_test.c 
+clear
+ls
+make
+insmod mychardev.ko 
+cat /dev/cipher
+cat /dev/cipher_key 
+echo "hello" > /dev/cipher
+cat /dev/cipher
+dmesg
+rmmod mychardev.ko
+clear
+ls
+make clean
+vi ex9_test.c 
+vi ex9_test.c 
+clear
+ls
+make
+insmod mychardev.ko 
+cat /dev/cipher
+cat /dev/cipher_key 
+echo "HELLO WORLD" > /dev/cipher
+cat /dev/cipher
+echo "HELLOKEY" > /dev/cipher_key 
+cat /dev/cipher_key 
+dmesg
+rmmod mychardev.ko
+clear
+ls
+make clean
+clear
+vi ex9_test.c 
+clear
+ls
+make
+insmod mychardev.ko 
+cat /dev/cipher_key 
+echo "MYKEY" > /dev/cipher_key 
+cat /dev/cipher_key 
+cat /dev/cipher
+rmmod  mychardev.ko
+clear
+dmesg
+clear
+make clean
+vi ex9_test.c 
+clear
+ls
+make
+insmod mychardev.ko 
+cat /dev/cipher
+cat /dev/cipher_key 
+echo "HELLO" > /dev/cipher
+cat /dev/cipher
+rmmod mychardev.ko
+clear
+make clean
+vi ex9_test.c 
+clear
+make
+insmod mychardev.ko 
+cat /dev/cipher
+echo "HELLO" > /dev/cipher
+cat /dev/cipher
+rmmod mychardev.ko
+make clean
+clear
+lsmod
+clear
+ls
+sudo poweroff
+clear
+ls
+cd ex9
+ls
+vi ex9_test.c 
+vi ex9_test.c 
+clear
+ls
+make
+insmod mychardev.ko 
+cat /dev/cipher
+cat /dev/cipher_key 
+clear
+ls
+cat /dev/cipher_key 
+echo "hello" > /dev/cipher
+cat /dev/cipher
+cat /dev/cipher_key 
+dmesg
+clear
+rmmod mychardev.ko
+clear
+make clean
+vi ex9_test.c
+clear
+make
+insmod mychardev.ko 
+cat /dev/cipher
+clear
+rmmod mychardev.ko
+make clean
+vi ex9_test.c 
+clear
+ls
+make
+insmod mychardev.ko 
+cat /dev/cipher
+dmesg
+clear
 dmesg -c
 clear
-rm foo.txt 
-clear
-rm a.out 
-clear
-ls
-make clean
-clear
-ls
-vi toorkit.c 
-clear
-ls
-make
-insmod toorkit.ko 
-clear
-vi toorkit.ko 
-clear
-make clean
-vi toorkit.c 
-clear
-make
-insmod toorkit.ko 
-dmesg
-rmmod toorkit.ko 
-clear
-sudo reboot
-clear
-ls
-make clean
-clear
-make
-insmod toorkit.ko 
-rmmod toorkit.ko 
-vi toorkit.c
-make
-clear
-dmesg
-dmesg -c
-clear
-ls
-make clean
-make
-insmod toorkit.ko 
-rmmod toorkit.ko 
-vi toorkit.c
-make clean
-clear
-vi toorkit.c 
-cat Makefile
-clear
-vi toorkit.c 
-clear
-ls
-make
-clear
-vi toorkit.c 
-clear
-make
-insmod toorkit.ko 
-rmmod toorkit.ko 
-clear
-ls
-make clean
-clear
-clear
-ls
-vi toorkit.c 
-clear
-make
-insmod toorkit.ko 
-clear
-rmmod toorkit.ko 
-clear
-vi toorkit.c
-clear
-make
-insmod toorkit.ko 
+echo "TEST@AUC" > /dev/cipher
+cat /dev/cipher
 dmesg
 clear
-dmesg -c
+ls
+clear
+echo "Test@auc hi" > /dev/cipher
+dmesg
+echo "Test hi" > /dev/cipher
+dmesg
+echo "This is a test msg" > /dev/cipher
+dmesg
+echo "This is a test message" > /dev/cipher
+dmesg
+clear
+rmmod mychardev.ko
+make clea
+make clean
 clear
 ls
+vi ex9_test.c 
+clear
+make
+insmod mychardev.ko 
+echo "HELLO" > /dev/cipher
 dmesg
-rmmod toorkit.ko 
-sudo reboot
+clear
+echo "HELLO" > /dev/cipher
+cat /dev/cipher
+clear
+rmmod mychardev.ko
+clear
+ls
+make clean
+ls
+sudo poweroff
